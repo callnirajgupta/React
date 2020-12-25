@@ -1,0 +1,31 @@
+
+body{
+    background-color: cadetblue;
+}
+input{
+  color:white;
+  background-color: blue;
+}
+h1{
+    text-align: center;
+}
+.charts{
+    display:flex;
+    justify-content: space-between;
+ 
+    
+}
+
+.btns{
+    display:flex;
+    justify-content: space-between;
+}
+
+#Highest:hover,#Lowest:hover{
+    background-color: cornflowerblue;
+
+}
+#Highest:focus,#Lowest:focus{
+    background-color: rgb(100, 149, 237);
+
+}

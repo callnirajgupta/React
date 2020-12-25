@@ -1,0 +1,1 @@
+var data=[{year:2007,births:4380784},{year:2006,births:4335154},{year:2008,births:4310737},{year:2005,births:4211941},{year:2009,births:4190991}];

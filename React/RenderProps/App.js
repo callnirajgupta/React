@@ -1,0 +1,21 @@
+import React from "react"
+import DataFetcher from "./DataFetcher"
+
+function App() {    
+    return (
+        <div>
+            <DataFetcher url="https://swapi.dev/api/people/1/"
+            render={({data, loading})=>{
+                return(
+                    loading ? 
+                    <h1>Loading...</h1> :
+                    <p>{JSON.stringify(data)}</p>
+                )
+            }}/>
+                
+            
+        </div>
+    )
+}
+
+export default App

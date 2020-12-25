@@ -1,0 +1,46 @@
+import React,{Component} from "react"
+// HOC is a function that takes a component as a parameter
+// and returns a new component wrapping the given component
+// and "supercharging" it by giving it some extra abilities
+class Toggler extends Component{
+
+    constructor(){
+        super()
+       
+        this.state = {
+          on: this.props.defaultvalue
+      }
+      
+    
+    this.toggle=this.toggle.bind(this)
+      }
+      
+      toggle() {
+        this.setState(prevState => {
+            return {
+                on: !prevState.on
+            }
+        })
+    }
+    
+
+    render(){
+        const Component = this.props.component
+        
+        return(
+
+            <Component on={this.state.on} toggle={this.toggle} {...this.props}/>
+        )
+    }
+}
+
+
+
+ export function withToggler(component,optionsObj) {
+    return function(props) {
+        return (
+            <Toggler component={component} defaultvalue={optionsObj.defaultvalue} {...props} />
+        )
+    }
+}
+

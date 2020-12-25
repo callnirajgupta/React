@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p id="demo1">My first paragraph.</p>
+<p id="demo"> sdfdsf</p>
+<button onclick="document.getElementById('demo1').innerHTML=functionon(1,2);">hello</button>
+
+<script>
+	console.log("print the value");
+	var a=["niraj",123];
+	var b={abc:"niraj",
+	efg:"gupta",
+	myfunction:function(){
+		return this.abc+" "+this.efg;
+
+	}
+};
+	document.getElementById("demo").innerHTML=b.myfunction();
+
+	function functionon(p1,p2){
+		return p1*p2;
+
+	}
+
+	var x=functionon(5,5);
+	window.alert(x);
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <!-- <script src="plotly.js"></script> -->
+        <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+       
+    </head>
+    <body>
+        <header>
+            <div>
+            <h1>USA Birth Data Analysis</h1>
+        </div>
+    </header>
+    <div class="btns">
+       <div class="btn">
+        <input type="button" id="Highest" value="HighestBirth"/>
+        <input type="button" id="Lowest" value="LowestBirth"/>   
+    </div>
+    <div class="btn">
+    <form>
+        <input type="radio" name="choice" value="yes"> Yes
+        <input type="radio" name="choice" value="no"> No
+        <input type="button" id="btn" value="Show Selected Value">
+    </form>
+</div>
+</div>
+        <div  class="charts">
+        <div id="myDiv" style="width:600px;height:250px;"></div>
+        
+         <div id="myLine" style="width:600px;height:250px;"></div> 
+        </div>
+        <script  src="BirthYearHighest.js"></script>
+        <script  src="BirthYearLowest.js"></script>
+        
+        <script src="index.js"></script>
+      
+    </body>
+</html>
